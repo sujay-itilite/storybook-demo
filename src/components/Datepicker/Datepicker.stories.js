@@ -1,8 +1,8 @@
 import React from "react";
-import { Datepicker } from "./Datepicker";
+import Datepicker from "./Datepicker";
 
 export default {
-    title: 'Example/Datepicker',
+    title: 'Components/Datepicker',
     component: Datepicker,
     argTypes: {
         backgroundColor: { control: 'color' },
