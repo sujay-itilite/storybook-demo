@@ -11,8 +11,6 @@ const engine = new Styletron();
 export default () => {
     const [value, setValue] = React.useState([new Date()]);
     return (
-
-        <React.StrictMode>
         <StyletronProvider value={engine}>
           <BaseProvider theme={LightTheme}>
             <DatePicker
@@ -20,12 +18,70 @@ export default () => {
                 onChange={({ date }) =>
                 setValue(Array.isArray(date) ? date : [date])
                 }
+                overrides={{
+                  InputWrapper: {
+                    style: ({ $theme }) => ({
+                      width: "324px",
+                      background: '#fff',
+                      borderColor: '#fff'
+                      // ":hover": {
+                      //   backgroundColor: "red"
+                      // }
+                    })
+                  },
+                  Input: {
+                    props: {
+                      overrides: {
+                        Root: {
+                          style: ({ $theme }) => ({
+                            outline: `none`,
+                            backgroundColor: "none"
+                          })
+                        },
+                        Input: {
+                          style: ({ $theme }) => ({
+                            height: '30px',
+                            backgroundColor: "#fff",
+                            border: "1px solid #EC5D25",
+                            outline: 'black',
+                            borderRadius: "6px",
+                            paddingright: '30px'
+                          })
+                        }
+                      }
+                    }
+                  },
+                  MonthYearSelectIconContainer: {
+                    style: ({ $theme }) => ({
+                      color: '#D1D5DB'
+                    })
+                  },
+                  Day: {
+                    style: ({
+                      $theme,
+                      $selected,
+                      $isHovered,
+                      $isHighlighted,
+                    }) => ({
+                      color: $selected
+                        ? $theme.colors.white
+                        : $theme.colors.calendarForeground,
+                      ':after': {
+                        backgroundColor: $selected
+                          ? $isHovered || $isHighlighted
+                            ? $theme.colors.positive100
+                            : '#EC5D25'
+                          : $isHovered || $isHighlighted
+                          ? $theme.colors.positive200
+                          : 'transparent',
+                      },
+                    }),
+                  }
+                  
+                }
+              }
             />
           </BaseProvider>
         </StyletronProvider>
-      </React.StrictMode>
-
-
-
     );
   }
