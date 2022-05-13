@@ -1,6 +1,6 @@
 import React from "react";
 import './datepicker.css'
-import { DatePicker } from "baseui/datepicker";
+import { ORIENTATION, DatePicker } from "baseui/datepicker";
 
 import {BaseProvider, LightTheme} from 'baseui';
 import { Provider as StyletronProvider } from "styletron-react";
@@ -18,6 +18,10 @@ export default () => {
                 onChange={({ date }) =>
                 setValue(Array.isArray(date) ? date : [date])
                 }
+                orientation={ORIENTATION.horizontal}
+                monthsShown={2}
+                range
+                quickSelect
                 overrides={{
                   InputWrapper: {
                     style: ({ $theme }) => ({
@@ -43,7 +47,6 @@ export default () => {
                             height: '30px',
                             backgroundColor: "#fff",
                             border: "1px solid #EC5D25",
-                            outline: 'black',
                             borderRadius: "6px",
                             paddingright: '30px'
                           })
