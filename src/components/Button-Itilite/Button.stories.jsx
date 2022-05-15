@@ -11,25 +11,47 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Default = Template.bind({});
+Default.args = {
   primary: true,
-  label: 'Button',
+  buttonState: 'default',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
+// export const Secondary = Template.bind({});
+// Secondary.args = {
+//   label: 'Button',
+// };
 
-export const Large = Template.bind({});
-Large.args = {
+export const Hover = Template.bind({});
+Hover.args = {
   size: 'large',
-  label: 'Button',
+  buttonState: 'hover',
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const Active = Template.bind({});
+Active.args = {
   size: 'small',
-  label: 'Button',
+  buttonState: 'active',
+  // label: 'Button',
+};
+
+export const Focus = Template.bind({});
+Focus.args = {
+  size: 'small',
+  buttonState: 'focus',
+  // label: 'Button',
+};
+
+export const Selected = Template.bind({});
+Selected.args = {
+  size: 'small',
+  buttonState: 'selected',
+  // label: 'Button',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  size: 'small',
+  buttonState: 'disabled',
+  // label: 'Button',
 };
