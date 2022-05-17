@@ -6,6 +6,7 @@ export default {
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
+    buttonState: {control: 'radio'}
   },
 };
 
@@ -22,41 +23,41 @@ Default.args = {
 //   label: 'Button',
 // };
 
-export const Hover = Template.bind({});
-Hover.args = {
-  wide: false,
-  // size: 'large',
-  buttonState: 'hover',
-};
+// export const Hover = Template.bind({});
+// Hover.args = {
+//   wide: false,
+//   // size: 'large',
+//   buttonState: 'hover',
+// };
 
-export const Active = Template.bind({});
-Active.args = {
-  wide: false,
-  // size: 'small',
-  buttonState: 'active',
-  // label: 'Button',
-};
+// export const Active = Template.bind({});
+// Active.args = {
+//   wide: false,
+//   // size: 'small',
+//   buttonState: 'active',
+//   // label: 'Button',
+// };
 
-export const Focus = Template.bind({});
-Focus.args = {
-  wide: false,
-  // size: 'small',
-  buttonState: 'focus',
-  // label: 'Button',
-};
+// export const Focus = Template.bind({});
+// Focus.args = {
+//   wide: false,
+//   // size: 'small',
+//   buttonState: 'focus',
+//   // label: 'Button',
+// };
 
-export const Selected = Template.bind({});
-Selected.args = {
-  wide: false,
-  // size: 'small',
-  buttonState: 'selected',
-  // label: 'Button',
-};
+// export const Selected = Template.bind({});
+// Selected.args = {
+//   wide: false,
+//   // size: 'small',
+//   buttonState: 'selected',
+//   // label: 'Button',
+// };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  wide: false,
-  // size: 'small',
-  buttonState: 'disabled',
-  // label: 'Button',
-};
+// export const Disabled = Template.bind({});
+// Disabled.args = {
+//   wide: false,
+//   // size: 'small',
+//   buttonState: 'disabled',
+//   // label: 'Button',
+// };
