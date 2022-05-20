@@ -4,6 +4,7 @@ import moduleClasses from './style.module.sass'
 
 export const TextInput = ({ wide, backgroundColor, label, buttonState, ...props }) => {
   const mode = wide ? 'wideButton' : '';
+  console.log(props, ' these are the props')
   return (
     <button
       type={`button`}
@@ -28,6 +29,5 @@ TextInput.defaultProps = {
   backgroundColor: null,
   wide: true,
   size: 'medium',
-  onClick: undefined,
   label: 'label',
 };

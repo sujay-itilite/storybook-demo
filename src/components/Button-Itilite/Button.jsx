@@ -8,6 +8,7 @@ import moduleClasses from './custom.module.sass'
  */
 export const Button = ({ wide, backgroundColor, label, buttonState, ...props }) => {
   const mode = wide ? 'wideButton' : '';
+  console.log(props, ' these are the button props')
   return (
     <button
       type={`button`}
@@ -40,16 +41,11 @@ Button.propTypes = {
   label: PropTypes.string.isRequired,
 
   buttonState: PropTypes.oneOf(['default', 'hover', 'active', 'focus', 'selected', 'disabled']),
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   backgroundColor: null,
   wide: true,
   size: 'medium',
-  onClick: undefined,
   label: 'label',
 };
