@@ -6,14 +6,12 @@ export const TextInput = ({ wide, backgroundColor, label, buttonState, ...props 
   const mode = wide ? 'wideButton' : '';
   console.log(props, ' these are the props')
   return (
-    <button
-      type={`button`}
-      className={`storybook-button storybook-button--primary button-${buttonState} ${moduleClasses[`${mode}`]}`}
-      style={backgroundColor && { backgroundColor }}
+    <input
+      type={`text`}
+      className={moduleClasses.itltTextfield}
       {...props}
     >
-      {label}
-    </button>
+    </input>
   );
 };
 

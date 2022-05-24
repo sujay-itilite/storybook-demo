@@ -19,8 +19,8 @@ export default () => {
                 setValue(Array.isArray(date) ? date : [date])
                 }
                 orientation={ORIENTATION.horizontal}
-                monthsShown={2}
-                range
+                // monthsShown={2}
+                // range
                 quickSelect
                 overrides={{
                   InputWrapper: {
@@ -28,9 +28,6 @@ export default () => {
                       width: "324px",
                       background: '#fff',
                       borderColor: '#fff'
-                      // ":hover": {
-                      //   backgroundColor: "red"
-                      // }
                     })
                   },
                   Input: {
