@@ -1,0 +1,93 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 36px;
+  border-radius: 6px;
+  width: 96px;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #EC5D25;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 0px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 0px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 0px 24px;
+}
+
+/* To be removed */
+
+.button-hover{
+  background: #C2410C;
+}
+
+.button-active{
+  background: #9A3412;
+}
+
+.button-focus{
+  background: #EC5D25;
+  box-shadow: 0px 1px 0px rgba(17, 24, 39, 0.1), 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #FDBA74;
+}
+
+.button-selected{
+  background: #7C2D12;
+}
+
+.button-disabled{
+  background: #F5AE92;
+}
+.custom_newclass__oC8kO{width:500px;color:#000 !important}.custom_wideButton__QOkjj{width:500px}
+
+/* .storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #EC5D25;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+} */
+
+
+.style_newclass__\+SsDq{width:500px;color:#000 !important}.style_wideButton__-Lg7Y{width:500px}.style_itltTextfield__zB2oK{background:#FFFFFF;border:1px solid #D1D5DB;border-radius:6px}
+
+
+/*# sourceMappingURL=main.673f6300.css.map*/
