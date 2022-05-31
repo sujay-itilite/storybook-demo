@@ -1,9 +1,14 @@
 import React from 'react';
 import { Button } from './Button';
+import { withPseudo } from '@ergosign/storybook-addon-pseudo-states-react';
 
 export default {
   title: 'Example/Button',
   component: Button,
+  decorators: [withPseudo],
+  parameters: {
+    withPseudo: { selector: 'button.storybook-button' },
+  },
   argTypes: {
     backgroundColor: { control: 'color' },
   },

@@ -16,6 +16,9 @@ export const TextInput = ({ wide, backgroundColor, label, placeholder, ...props 
   );
 };
 
+
+TextInput.parameters = { pseudo: { hover: true } }
+
 TextInput.propTypes = {
   wide: PropTypes.bool,
   backgroundColor: PropTypes.string,

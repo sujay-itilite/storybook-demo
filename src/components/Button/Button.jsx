@@ -19,6 +19,8 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   );
 };
 
+Button.parameters = { pseudo: { hover: true } }
+
 Button.propTypes = {
   /**
    * Is this the principal call to action on the page?
