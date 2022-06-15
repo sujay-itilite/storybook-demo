@@ -5,8 +5,7 @@ export default {
   title: 'Components/TextInput',
   component: TextInput,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    TextInputState: {control: 'radio'}
+    backgroundColor: { control: 'color' }
   },
 };
 
@@ -14,6 +13,5 @@ const Template = (args) => <TextInput {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  wide: false,
-  TextInputState: 'default',
+  wide: false
 };
