@@ -23,23 +23,9 @@ export const Button = ({ wide, backgroundColor, label, buttonState, ...props }) 
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
   wide: PropTypes.bool,
-  /**
-   * What background color to use
-   */
   backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  // size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
   label: PropTypes.string.isRequired,
-
   buttonState: PropTypes.oneOf(['default', 'hover', 'active', 'focus', 'selected', 'disabled']),
 };
 
