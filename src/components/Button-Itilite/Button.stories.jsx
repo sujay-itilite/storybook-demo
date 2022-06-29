@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from './MUIButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
 
 export default {
   title: 'Components/Button',
@@ -13,5 +15,5 @@ const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  wide: false
+  label: 'label'
 };
