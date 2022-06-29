@@ -5,8 +5,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    buttonState: {control: 'radio'}
+    backgroundColor: { control: 'color' }
   },
 };
 
@@ -14,6 +13,5 @@ const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  wide: false,
-  buttonState: 'default',
+  wide: false
 };

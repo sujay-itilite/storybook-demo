@@ -12,8 +12,7 @@ export const Button = ({ wide, backgroundColor, label, buttonState, ...props }) 
   return (
     <button
       type={`button`}
-      // className={`storybook-button storybook-button--primary button-${buttonState} ${moduleClasses[`${mode}`]}`}
-      className={`storybook-button storybook-button--primary button-${buttonState} ${moduleClasses[`${mode}`]}`}
+      className={`storybook-button storybook-button--primary ${moduleClasses[`${mode}`]}`}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -26,7 +25,6 @@ Button.propTypes = {
   wide: PropTypes.bool,
   backgroundColor: PropTypes.string,
   label: PropTypes.string.isRequired,
-  buttonState: PropTypes.oneOf(['default', 'hover', 'active', 'focus', 'selected', 'disabled']),
 };
 
 Button.defaultProps = {
