@@ -5,4 +5,15 @@
     color: #000 !important
 
 .wideButton
-    width: $generic-width
+    max-width: $generic-width
+    background: red
+    padding: 2px 5px
+    color: #fff
+
+    &:global(.MuiButton-root)
+        background-color: $orange-600
+        padding: 10px 30px
+
+    &:hover
+        background-color: black
+
