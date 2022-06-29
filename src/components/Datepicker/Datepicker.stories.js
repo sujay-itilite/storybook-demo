@@ -1,13 +1,13 @@
 import React from "react";
 import Datepicker from "./Datepicker";
 
-export default {
-    title: 'Components/Datepicker',
-    component: Datepicker,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-};
+// export default {
+//     title: 'Components/Datepicker',
+//     component: Datepicker,
+//     argTypes: {
+//         backgroundColor: { control: 'color' },
+//     },
+// };
 
 const Template = (args) => <Datepicker {...args} />;
 

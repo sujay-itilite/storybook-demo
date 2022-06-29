@@ -1,21 +1,18 @@
 @import '../assets/tokens'
 
-.newclass
-    width: 500px
-    color: #000 !important
-
 .IuiButton
-    max-width: $generic-width
 
 
     &:global(.MuiButton-root)
         background-color: $orange-600
         padding: 8px 12px
+        min-width: $button-min-width
         color: #fff
         font-weight: 500
         font-size: 14px
         line-height: 20px
         border-radius: 6px
+        text-transform: capitalize
 
         &.primary
             &:hover
