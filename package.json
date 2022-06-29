@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "http://sujay-itilite.github.io/storybook-demo",
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.6",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -26,7 +29,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6003 -s public",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "master -d storybook-static",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
   "eslintConfig": {
