@@ -28,8 +28,7 @@ export const Button = ({ label, type, startIcon, endIcon, ...props }) => {
 };
 
 Button.propTypes = {
-    label: PropTypes.string.isRequired,
-    startIcon: PropTypes.object
+    label: PropTypes.string.isRequired
 };
 
 Button.defaultProps = {
