@@ -17,19 +17,22 @@ export const Primary = Template.bind({});
 Primary.args = {
   label: 'label',
   type: 'primary',
-  icons: 'none'
+  startIcon: true,
+  endIcon: true
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'label',
   type: 'secondary',
-  icons: 'none'
+  startIcon: true,
+  endIcon: true
 };
 
 export const Neutral = Template.bind({});
 Neutral.args = {
   label: 'label',
   type: 'neutral',
-  icons: 'none'
+  startIcon: true,
+  endIcon: true
 };

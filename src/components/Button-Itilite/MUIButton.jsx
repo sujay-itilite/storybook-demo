@@ -12,10 +12,8 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
  */
 export const Button = ({ label, type, startIcon, endIcon, ...props }) => {
 
-    const starticon = <AddIcon /> || startIcon;
-    const endicon = <KeyboardArrowDownIcon /> || endIcon;
-    const typeCN = JSON.stringify(type)
-    console.log('this is the type', type)
+    const starticon = startIcon ? <AddIcon /> : ''
+    const endicon = endIcon ? <KeyboardArrowDownIcon /> : ''
   return (
     <MUIButton
       className={`${moduleClasses[`IuiButton`]} ${moduleClasses[type]}`}
