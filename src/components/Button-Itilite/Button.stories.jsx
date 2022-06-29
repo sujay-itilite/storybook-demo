@@ -13,7 +13,23 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
-  label: 'label'
+export const Primary = Template.bind({});
+Primary.args = {
+  label: 'label',
+  type: 'primary',
+  icons: 'none'
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'label',
+  type: 'secondary',
+  icons: 'none'
+};
+
+export const Neutral = Template.bind({});
+Neutral.args = {
+  label: 'label',
+  type: 'neutral',
+  icons: 'none'
 };

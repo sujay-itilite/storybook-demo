@@ -10,12 +10,17 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ label, ...props }) => {
+export const Button = ({ label, type, startIcon, endIcon, ...props }) => {
+
+    const starticon = <AddIcon /> || startIcon;
+    const endicon = <KeyboardArrowDownIcon /> || endIcon;
+    const typeCN = JSON.stringify(type)
+    console.log('this is the type', type)
   return (
     <MUIButton
-      className={`storybook-button storybook-button--primary} ${moduleClasses[`wideButton`]}`}
-      startIcon={<AddIcon />}
-      endIcon={<KeyboardArrowDownIcon/>}
+      className={`${moduleClasses[`IuiButton`]} ${moduleClasses[type]}`}
+      startIcon={starticon}
+      endIcon={endicon}
       disableRipple={true}
       {...props}
     >
@@ -25,7 +30,8 @@ export const Button = ({ label, ...props }) => {
 };
 
 Button.propTypes = {
-    label: PropTypes.string.isRequired
+    label: PropTypes.string.isRequired,
+    startIcon: PropTypes.object
 };
 
 Button.defaultProps = {
