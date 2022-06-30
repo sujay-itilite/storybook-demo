@@ -19,7 +19,7 @@ export const Button = ({ label, type, startIcon, endIcon, ...props }) => {
       className={`${moduleClasses[`IuiButton`]} ${moduleClasses[type]}`}
       startIcon={starticon}
       endIcon={endicon}
-      disableRipple={false}
+      disableRipple={true}
       {...props}
     >
       {label}
