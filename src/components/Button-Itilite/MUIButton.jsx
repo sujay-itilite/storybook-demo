@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as MUIButton } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
-import SendIcon from '@mui/icons-material/Send';
 import moduleClasses from './custom.module.sass'
 import AddIcon from '@mui/icons-material/Add';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
