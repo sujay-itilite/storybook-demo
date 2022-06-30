@@ -30,5 +30,5 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    label: 'Label'
+    label: 'Button'
 };
